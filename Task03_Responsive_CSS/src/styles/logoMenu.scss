@@ -1,0 +1,157 @@
+.logoMenu{
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+.logoMenuImage{
+  margin: 0;
+  width: 100%;
+  height: 40px;
+  vertical-align: middle;
+  background: white;
+
+  &__logoImage{
+    height: 40px;
+    position: absolute;
+    left: calc(50% - 64px);
+  }
+  &__buttonBlock{
+    float: left;
+    text-align: left;
+    padding: 0;
+    .menu_check{
+      display: none;
+    }
+    .menu_label .fas{
+      border: none;
+      color: $redColor1;
+      background: white;
+      font-size: 20px;
+      margin: 10px;
+    }
+    :hover{
+      cursor: pointer;
+    }
+    .menu_check:checked~div{
+      display: block;
+      z-index: 1;
+      // transition-duration: 0.5s;
+    }
+    .menu_check:checked + label{
+      span{
+        color: white;
+        background: black;
+        .fas{
+          display: inline;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.menu{
+  display: none;  //по умолчанию меню не видно
+  position: absolute;
+  min-height: calc(100vh - 40px);
+  background: $grayMenu2;
+  width: 180px;
+  &_main{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  &__item{
+    height: 40px;
+    width: 100%;
+    border: 1px solid $grayColor4;
+    padding: 0;
+    input[type="radio"]{
+      display: none;
+    }
+    //Выбранный элемент
+    input[type="radio"]:checked + label{
+      span{
+        color: white;
+        background: black;
+        .fas{
+          display: inline;
+          color: white;
+        }
+      }
+    }
+
+    span{
+      display: block;
+      box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      margin: 0;
+      text-decoration: none;
+      @include fontMenu;
+      //Значок
+      .fas{
+        display: none;
+      }
+    }
+  }
+
+  &__item:nth-child(6){
+    @extend .menu__item;
+    .fas{
+      display: inline;
+    }
+  }
+
+  &__item:last-child{
+    border-bottom: none;
+    height: 60px;
+    .item_Logged{
+      @include fontMenu;
+      display: block;
+      div:first-child{
+      display: inline-block;
+      height: 100%;
+      vertical-align: top;
+        .fa-user{
+          display: inline;
+          font-size: 20px;
+          vertical-align: top;
+        }
+        :hover{
+          color: white;
+        }
+      }
+      div:last-child{
+        display: inline-block;
+        height: 100%;
+        vertical-align: bottom;
+        .span1{
+          height: 50%;
+          margin: 0;
+          padding: 0;
+          @include fontMenu;
+          font-size: 8px;
+        }
+        .span2{
+          height: 50%;
+          margin: 0;
+          padding: 0;
+          @include fontMenu;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  //Элемент списка, над которым оказался курсор
+  &__item:hover{
+    span{
+      color: white;
+      .fas{
+        display: inline;
+        color: white;
+      }
+    }
+  }
+}

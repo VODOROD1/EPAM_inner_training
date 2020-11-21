@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Task3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+        <link href="styles/index.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="logoMenu">
+            <!-- кнопка активации появления меню -->
+            <div class="logoMenu__logoMenuImage logoMenuImage">
+                <div class="logoMenuImage__buttonBlock">
+                    <input class="menu_check" type="checkbox" id="menu" name="checkname">
+                    <label class="menu_label" for="menu">
+                            <i class="fas fa-bars"></i>
+                    </label>
+                    <!-- Непосредственно само боковое МЕНЮ -->
+                    <div class="logoMenu__menu menu">
+                        <nav class="menu__nav">
+                            <ul class="menu_main">
+                                <li class="menu__item">
+                                    <input type="radio" id="item-1" name="radioname" class="item_radio">
+                                    <label for="item-1" class="item_label"><span>EXPERT SEARCH <i class="fas fa-search"></i></span></label>
+                                </li>
+                                <li class="menu__item">
+                                    <input type="radio" id="item-2" name="radioname" class="item_radio">
+                                    <label for="item-2" class="item_label"><span>SAVED EXPERTS <i class="fas fa-save"></i></span></label>
+                                </li>
+                                <li class="menu__item">
+                                    <input type="radio" id="item-3" name="radioname" class="item_radio">
+                                    <label for="item-3" class="item_label"><span>PROJECTS <i class="fas fa-flag"></i></span></label>
+                                </li>
+                                <li class="menu__item">
+                                    <input type="radio" id="item-4" name="radioname" class="item_radio">
+                                    <label for="item-4" class="item_label"><span>CONSULTATIONS <i class="fas fa-phone-alt"></i></span></label>
+                                </li>
+                                <li class="menu__item">
+                                    <input type="radio" id="item-5" name="radioname" class="item_radio">
+                                    <label for="item-5" class="item_label"><span>EVENTS <i class="fas fa-calendar-alt"></i></span></label>
+                                </li>
+                                <li class="menu__item">
+                                    <input type="radio" id="item-6" name="radioname" class="item_radio">
+                                    <label for="item-6" class="item_label"><span><i class="fas fa-sign-out-alt"></i> LOGOUT</span></label>
+                                </li>
+                                <li class="menu__item">
+                                    <input type="radio" id="item-7" name="radioname" class="item_radio">
+                                    <label for="item-7" class="item_label">
+                                        <span class="item_Logged">
+                                            <div><i class="fas fa-user"></i></div>
+                                            <div><span class="span1">
+                                                    LOGGED IN AS
+                                                </span>
+                                                <span class="span2">
+                                                    Girish Gopalan
+                                                </span>
+                                            </div>
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <img class="logoMenuImage__logoImage" src="images/epamLogo.png" alt="logo">
+            </div>
+
+        </div>
+        <div class="content">
+
+            <header class="header">
+                <p class="header__projectList">
+                    <span class="projectList__badge"><i class="fas fa-less-than"></i></span>
+                    <span class="projectList__lettering">Projects List</span>
+                </p>
+                <div class="header__testProjectLast">
+                    <span class="testProjectLast__letteringNameOfProject">Test Project last</span>
+                    <input class="testProjectLast__plusCheck" type="checkbox" id="infoAboutProjectCheck" name="">
+                    <label class="testProjectLast__plusLabel" for="infoAboutProjectCheck">
+                        <i class="fas fa-plus-circle"></i>
+                        <i class="fas fa-minus-circle"></i>
+                    </label>
+
+                    <div class="testProjectLast__infoAboutProject">
+                        <div class="infoAboutProject__wrapper">
+                            <table class="infoAboutProject__table">
+                                <tr>
+                                    <td><p>Create date</p></td>
+                                    <td><p>01/20/15</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Target industries</p></td>
+                                    <td>
+                                        <p>Wireline Telephone</p>
+                                        <p>Equipment</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><p>Bios sent</p></td>
+                                    <td><p>10</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Calls scheduled</p></td>
+                                    <td><p>2</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="infoAboutProject__wrapper"> 
+                            <table class="infoAboutProject__table">
+                                <tr>
+                                    <td><p>Requested consultations</p></td>
+                                    <td><p>10</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Target companies</p></td>
+                                    <td>
+                                        <p>Frontier Communications</p>
+                                        <p>Corporation [FTR]</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><p>Calls completed</p></td>
+                                    <td><p>2</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Calls in scheduling</p></td>
+                                    <td><p>1</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="tabs">
+                    <button class="tabs__tab">
+                        <span class="tab__title">EXPERTS</span>
+                        <i class="fas fa-flag"></i>
+                    </button>
+                    <button class="tabs__tab">
+                        <span class="tab__title">CONSULTATIONS</span>
+                        <i class="fas fa-phone-alt"></i>
+                    </button>
+                </div>
+
+                <div class="recordManagementBlock">
+                    <button class="recordManagementBlock_expandAll">
+                        <span class="tab__title">EXPAND ALL</span>
+                    </button>
+                    <button class="recordManagementBlock_export">
+                        <i class="fas fa-file-excel"></i>
+                        <span class="tab__title">EXPORT</span>
+                    </button>
+                    <button class="recordManagementBlock_filters">
+                        <i class="fas fa-filter"></i>
+                        <span class="tab__title">FILTERS</span>
+                    </button>
+                    <select class="recordManagementBlock_select">
+                        <option>Sort by Status</option>
+                        <option>Sort by Status</option>
+                        <option>Sort by Status</option>
+                    </select>
+                </div>
+                <!-- <div class="test">
+
+                </div> -->
+            </header>
+            <main class="main">
+                <section class="main__section">
+
+                    <article class="profileArticle">
+                        <section class="profileArticle__profileSection profileSection">
+                            <p>
+                                <span class="profileSection__jobTitle1">INDUSTRY EXPERT</span>
+                                <span class="profileSection__timeAndButtonWrap">
+                                    <span class="profileSection__timeSpan">07.13.14</span>
+                                    <span class="profileSection__wrapOfNewButton">
+                                        <input class="profileSection__newButton" type="button" value="NEW"/>
+                                    </span>
+                                </span>
+                            </p>
+                            <p><h1 class="profileSection__personName">Mikhail Semichev</h1></p>
+                            <p>
+                                <div class="profileSection__companyName">EPAM</div>
+                                <div class="profileSection__status">PUBLIC</div>
+                            </p>
+                            <p>
+                                <span class="profileSection__jobTitle2">FE developer</span>
+                                <span class="profileSection__workPeriod">(12/01/11 - Present)</span>
+                            </p>
+                            <p class="profileSection__description description">
+                                <span class="description__typeOfDescription">Premium Rate:</span>
+                                <span class="description__typeOfDescription">This Expert's hourly consultiong rate
+                                    exceeds our standard rate and would require an additional call debit.
+                                </span>
+                            </p>
+                            <p class="profileSection__description description">
+                                <span class="description__typeOfDescription">Translator Required:</span>
+                                <span class="description__typeOfDescription">This Expert requires a translator,
+                                    which we can coordinate for one additional call debit.
+                                </span>
+                            </p>
+                        </section>
+                        <section class="profileArticle__availabilitySection availabilitySection">
+                            <h4 class="availabilitySection__topic">Confirmed Availability</h4>
+                            <p>Tuesday 07/21/15 11:00 AM - 07:13 AM (UTC-05:00) Eastern Time (US & Canada)</p>
+                            <p>Monday 07/20/15 07:00 AM - 10:00 AM (UTC-05:00) Eastern Time (US & Canada)</p>
+                        </section>
+                    </article>
+
+                    <article class="buttonsManageProfile">
+                        <button class="buttonsManageProfile_button">
+                            <i class="fas fa-phone-alt"></i>
+                            <span class="scheduleButton__title">SCHEDULE</span>
+                        </button>
+                        <button class="buttonsManageProfile_button">
+                            <i class="fas fa-info-circle"></i>
+                            <span class="scheduleButton__title">REQUEST INFO</span>
+                        </button>
+                        <button class="buttonsManageProfile_button">
+                            <i class="fas fa-times"></i>
+                            <span class="scheduleButton__title">DECLINE</span>
+                        </button>
+                    </article>
+                </section>
+
+                <section class="main__section">
+
+                    <article class="profileArticle">
+                        <section class="profileArticle__profileSection profileSection">
+                            <p>
+                                <span class="profileSection__jobTitle1">INDUSTRY EXPERT</span>
+                                <span class="profileSection__timeAndButtonWrap">
+                                    <span class="profileSection__timeSpan">07.13.14</span>
+                                    <span class="profileSection__wrapOfNewButton">
+                                        <input class="profileSection__newButton" type="button" value="NEW"/>
+                                    </span>
+                                </span>
+                            </p>
+                            <p><h1 class="profileSection__personName">Mikhail Semichev</h1></p>
+                            <p>
+                                <div class="profileSection__companyName">EPAM</div>
+                                <div class="profileSection__status">PUBLIC</div>
+                            </p>
+                            <p>
+                                <span class="profileSection__jobTitle2">FE developer</span>
+                                <span class="profileSection__workPeriod">(12/01/11 - Present)</span>
+                            </p>
+                            <p class="profileSection__description description">
+                                <span class="description__typeOfDescription">Premium Rate:</span>
+                                <span class="description__typeOfDescription">This Expert's hourly consultiong rate
+                                    exceeds our standard rate and would require an additional call debit.
+                                </span>
+                            </p>
+                            <p class="profileSection__description description">
+                                <span class="description__typeOfDescription">Translator Required:</span>
+                                <span class="description__typeOfDescription">This Expert requires a translator,
+                                    which we can coordinate for one additional call debit.
+                                </span>
+                            </p>
+                        </section>
+                        <section class="profileArticle__availabilitySection availabilitySection">
+                            <h4 class="availabilitySection__topic">Confirmed Availability</h4>
+                            <p>Tuesday 07/21/15 11:00 AM - 07:13 AM (UTC-05:00) Eastern Time (US & Canada)</p>
+                            <p>Monday 07/20/15 07:00 AM - 10:00 AM (UTC-05:00) Eastern Time (US & Canada)</p>
+                        </section>
+                    </article>
+
+                    <article class="buttonsManageProfile">
+                        <button class="buttonsManageProfile_button">
+                            <i class="fas fa-phone-alt"></i>
+                            <span class="scheduleButton__title">SCHEDULE</span>
+                        </button>
+                        <button class="buttonsManageProfile_button">
+                            <i class="fas fa-info-circle"></i>
+                            <span class="scheduleButton__title">REQUEST INFO</span>
+                        </button>
+                        <button class="buttonsManageProfile_button">
+                            <i class="fas fa-times"></i>
+                            <span class="scheduleButton__title">DECLINE</span>
+                        </button>
+                    </article>
+                </section>
+            </main>
+        </div>
+
+    </body>
+</html>

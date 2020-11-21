@@ -1,0 +1,16 @@
+@import "variables";
+@import "mixins";
+@import "logoMenu";
+@import "header";
+@import "main";
+@import "media";
+
+*{
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+body{
+  background-color: $grayColor1;
+  margin: 0;
+  padding: 0;
+}

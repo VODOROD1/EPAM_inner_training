@@ -1,0 +1,461 @@
+.logoMenu {
+  width: 100%;
+  height: auto;
+  padding: 0; }
+
+.logoMenuImage {
+  margin: 0;
+  width: 100%;
+  height: 40px;
+  vertical-align: middle;
+  background: white; }
+  .logoMenuImage__logoImage {
+    height: 40px;
+    position: absolute;
+    left: calc(50% - 64px); }
+  .logoMenuImage__buttonBlock {
+    float: left;
+    text-align: left;
+    padding: 0; }
+    .logoMenuImage__buttonBlock .menu_check {
+      display: none; }
+    .logoMenuImage__buttonBlock .menu_label .fas {
+      border: none;
+      color: #ba1839;
+      background: white;
+      font-size: 20px;
+      margin: 10px; }
+    .logoMenuImage__buttonBlock :hover {
+      cursor: pointer; }
+    .logoMenuImage__buttonBlock .menu_check:checked ~ div {
+      display: block;
+      z-index: 1; }
+    .logoMenuImage__buttonBlock .menu_check:checked + label span {
+      color: white;
+      background: black; }
+      .logoMenuImage__buttonBlock .menu_check:checked + label span .fas {
+        display: inline;
+        color: white; }
+
+.menu {
+  display: none;
+  position: absolute;
+  min-height: calc(100vh - 40px);
+  background: #333333;
+  width: 180px; }
+  .menu_main {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white; }
+  .menu__item, .menu__item:nth-child(6) {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #1d1d1d;
+    padding: 0; }
+    .menu__item input[type="radio"] {
+      display: none; }
+    .menu__item input[type="radio"]:checked + label span {
+      color: white;
+      background: black; }
+      .menu__item input[type="radio"]:checked + label span .fas {
+        display: inline;
+        color: white; }
+    .menu__item span, .menu__item:nth-child(6) span {
+      display: block;
+      box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      margin: 0;
+      text-decoration: none;
+      color: #636363;
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif; }
+      .menu__item span .fas {
+        display: none; }
+  .menu__item:nth-child(6) .fas {
+    display: inline; }
+  .menu__item:last-child {
+    border-bottom: none;
+    height: 60px; }
+    .menu__item:last-child .item_Logged {
+      color: #636363;
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      display: block; }
+      .menu__item:last-child .item_Logged div:first-child {
+        display: inline-block;
+        height: 100%;
+        vertical-align: top; }
+        .menu__item:last-child .item_Logged div:first-child .fa-user {
+          display: inline;
+          font-size: 20px;
+          vertical-align: top; }
+        .menu__item:last-child .item_Logged div:first-child :hover {
+          color: white; }
+      .menu__item:last-child .item_Logged div:last-child {
+        display: inline-block;
+        height: 100%;
+        vertical-align: bottom; }
+        .menu__item:last-child .item_Logged div:last-child .span1 {
+          height: 50%;
+          margin: 0;
+          padding: 0;
+          color: #636363;
+          font-size: 12px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 8px; }
+        .menu__item:last-child .item_Logged div:last-child .span2 {
+          height: 50%;
+          margin: 0;
+          padding: 0;
+          color: #636363;
+          font-size: 12px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 12px; }
+  .menu__item:hover span {
+    color: white; }
+    .menu__item:hover span .fas {
+      display: inline;
+      color: white; }
+
+.content {
+  width: 95%;
+  min-width: 320px;
+  padding: 10px;
+  margin: 0 auto; }
+
+.header__projectList {
+  margin: 10px 0px;
+  font-size: 15px; }
+  .header__projectList .projectList__lettering {
+    margin-left: 5px; }
+
+.header__testProjectLast {
+  margin: 10px 0px; }
+  .header__testProjectLast .testProjectLast__letteringNameOfProject {
+    font-size: 20px; }
+
+.testProjectLast__plusCheck {
+  display: none; }
+
+.testProjectLast__plusLabel {
+  border: none;
+  background: #f2f2f2;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  padding: 0;
+  vertical-align: bottom; }
+  .testProjectLast__plusLabel .fa-plus-circle {
+    color: #747474;
+    vertical-align: top;
+    width: 15px;
+    height: 15px;
+    margin: 0; }
+  .testProjectLast__plusLabel .fa-minus-circle {
+    color: #747474;
+    vertical-align: top;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    display: none; }
+  .testProjectLast__plusLabel :hover {
+    cursor: pointer; }
+
+.testProjectLast__plusCheck:checked ~ .testProjectLast__infoAboutProject {
+  display: block; }
+
+.testProjectLast__plusCheck:checked + label .fa-plus-circle {
+  display: none; }
+
+.testProjectLast__plusCheck:checked + label .fa-minus-circle {
+  display: inline; }
+
+.testProjectLast__infoAboutProject {
+  width: 100%;
+  height: auto;
+  display: none;
+  margin-top: 15px; }
+  .testProjectLast__infoAboutProject .infoAboutProject {
+    color: #636363;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif; }
+    .testProjectLast__infoAboutProject .infoAboutProject__wrapper {
+      width: 100%; }
+    .testProjectLast__infoAboutProject .infoAboutProject__table {
+      width: 100%;
+      color: #636363;
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse; }
+      .testProjectLast__infoAboutProject .infoAboutProject__table tr {
+        border-top: 1px solid black; }
+        .testProjectLast__infoAboutProject .infoAboutProject__table tr p {
+          color: #636363;
+          font-size: 12px;
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0; }
+        .testProjectLast__infoAboutProject .infoAboutProject__table tr td:first-child {
+          text-align: left;
+          border-top: 1px solid #d7d7d7;
+          padding: 5px; }
+          .testProjectLast__infoAboutProject .infoAboutProject__table tr td:first-child p {
+            color: black;
+            font-weight: bold; }
+        .testProjectLast__infoAboutProject .infoAboutProject__table tr td:last-child {
+          text-align: right;
+          border-top: 1px solid #d7d7d7;
+          padding: 5px; }
+          .testProjectLast__infoAboutProject .infoAboutProject__table tr td:last-child p {
+            color: gray; }
+
+.tabs {
+  width: 100%;
+  height: 35px;
+  padding: 0; }
+  .tabs__tab {
+    height: 35px;
+    margin: 0;
+    margin-top: -1px;
+    padding: 0;
+    border: 1px solid #d7d7d7;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; }
+    .tabs__tab .fas {
+      color: #ba1839; }
+  .tabs__tab:first-child {
+    width: 45%;
+    background-color: #f2f2f2;
+    float: left; }
+  .tabs__tab:last-child {
+    width: calc(55%);
+    margin-right: 0px;
+    float: right;
+    background-color: #d7d7d7; }
+
+.recordManagementBlock {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 10px;
+  border: 1px solid #d7d7d7;
+  border-top: none; }
+  .recordManagementBlock button {
+    background: linear-gradient(to top, lightgrey, #f0f0f0);
+    height: 35px;
+    font-size: 11px;
+    border-radius: 5px;
+    width: 30%;
+    border: 1px solid lightgray;
+    margin: 5px; }
+  .recordManagementBlock_expandAll {
+    flex: 1 1 1;
+    float: left; }
+  .recordManagementBlock_export {
+    flex: 1 1 1; }
+    .recordManagementBlock_export .fas {
+      color: green; }
+  .recordManagementBlock_filters {
+    flex: 1 1 1;
+    float: right;
+    text-align: left;
+    display: block;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 15px !important; }
+    .recordManagementBlock_filters i {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 15px; }
+    .recordManagementBlock_filters span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 15px; }
+  .recordManagementBlock_filters::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    height: 24px;
+    width: 24px;
+    background: linear-gradient(to top left, lightgrey, #f0f0f0);
+    right: 8%;
+    top: 4px;
+    transform: rotate(45deg);
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray; }
+  .recordManagementBlock_select {
+    flex: 3 1 0;
+    margin: 5px;
+    margin-bottom: 10px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 12px;
+    color: gray; }
+
+.content {
+  width: 100%;
+  max-width: 880px; }
+
+.main {
+  width: 100%; }
+  .main__section {
+    margin: 10px 0px;
+    padding: 0px;
+    border: 1px solid #d7d7d7;
+    box-shadow: 1px 2px 1px 1px lightgray; }
+
+.profileSection {
+  border: 1px solid #d7d7d7;
+  padding: 10px; }
+  .profileSection p {
+    margin: 5px 0px;
+    width: 100%; }
+  .profileSection__jobTitle1 {
+    display: inline-block;
+    width: 70%;
+    font-size: 12px;
+    color: #c1516f; }
+  .profileSection__timeAndButtonWrap {
+    float: right; }
+  .profileSection__timeSpan {
+    margin-right: 10px;
+    font-size: 10px; }
+  .profileSection__wrapOfNewButton {
+    margin-right: 5px; }
+  .profileSection__newButton {
+    padding: 0;
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    color: white;
+    background: #ba1839;
+    border: none;
+    border-radius: 7px; }
+  .profileSection__personName {
+    margin: 0px;
+    font-size: 20px; }
+  .profileSection__companyName {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold; }
+  .profileSection__status {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    font-size: 10px;
+    color: #c1516f;
+    border: 2px solid #c1516f;
+    border-radius: 5px; }
+  .profileSection__jobTitle2 {
+    font-size: 12px; }
+  .profileSection__workPeriod {
+    font-size: 12px;
+    color: gray; }
+  .profileSection__description {
+    color: #c1516f; }
+
+.availabilitySection {
+  color: #c1516f;
+  font-weight: 100;
+  padding: 10px; }
+  .availabilitySection__topic {
+    text-decoration: underline;
+    margin: 0; }
+  .availabilitySection p {
+    margin: 0;
+    margin-left: 20px;
+    font-size: 15px; }
+
+.buttonsManageProfile {
+  width: 100%; }
+  .buttonsManageProfile_button {
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-align: start;
+    cursor: pointer; }
+
+@media screen and (min-width: 750px) {
+  body > div {
+    display: inline-block;
+    vertical-align: top; }
+
+  .logoMenu {
+    width: 180px;
+    min-height: 100%; }
+    .logoMenu .logoMenuImage {
+      height: 80px; }
+      .logoMenu .logoMenuImage__logoImage {
+        left: 15px;
+        top: 15px;
+        height: 50px; }
+      .logoMenu .logoMenuImage__buttonBlock .menu_label {
+        display: none; }
+    .logoMenu .menu {
+      display: block;
+      position: static;
+      margin-top: 80px;
+      margin-bottom: 0px;
+      min-height: calc(100vh - 80px);
+      min-height: -webkit-calc(100vh - 80px); }
+    .logoMenu .recordManagementBlock_export {
+      margin-right: 20px; }
+
+  .testProjectLast__infoAboutProject .infoAboutProject {
+    color: #636363;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif; }
+    .testProjectLast__infoAboutProject .infoAboutProject__wrapper {
+      display: inline-block;
+      width: 48%;
+      margin-right: 1%; }
+
+  .recordManagementBlock_filters::before {
+    right: 7%; }
+
+  .content {
+    width: calc(100% - 200px); }
+    .content .recordManagementBlock {
+      display: block; }
+      .content .recordManagementBlock_expandAll {
+        float: left;
+        width: 24%; }
+      .content .recordManagementBlock_export {
+        position: absolute;
+        top: 30px;
+        right: 25px;
+        width: 100px; }
+      .content .recordManagementBlock_filters {
+        float: right;
+        width: 24%; }
+      .content .recordManagementBlock_select {
+        clear: none;
+        width: 47%; }
+    .content .main .buttonsManageProfile {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between; }
+      .content .main .buttonsManageProfile_button {
+        display: inline-block;
+        text-align: center; } }
+@media screen and (min-width: 1100px) {
+  .content {
+    margin-left: calc((100% - 180px - 880px)/2); }
+    .content .recordManagementBlock_export {
+      margin-right: calc((100% - 180px - 880px)/2); }
+    .content .recordManagementBlock_filters::before {
+      right: 4%; } }
+* {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif; }
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=index.css.map */

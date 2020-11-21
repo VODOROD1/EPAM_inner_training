@@ -1,0 +1,95 @@
+.content{
+  width: 100%;
+  max-width: 880px;
+}
+.main{
+  width: 100%;
+  &__section{
+    margin: 10px 0px;
+    padding: 0px;
+    border: 1px solid $grayColor2;
+    box-shadow: 1px 2px 1px 1px lightgray;
+  }
+}
+.profileSection{
+  border: 1px solid $grayColor2;
+  padding: 10px;
+  p{
+    margin: 5px 0px;
+    width: 100%;
+  }
+  &__jobTitle1{
+    display: inline-block;
+    width: 70%;
+    font-size: 12px;
+    color: $redColor2;
+  }
+  &__timeAndButtonWrap{
+    float: right;
+  }
+  &__timeSpan{
+    margin-right: 10px;
+    font-size: 10px;
+  }
+  &__wrapOfNewButton{
+    margin-right: 5px;
+  }
+  &__newButton{
+    padding: 0;
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    color: white;
+    background: $redColor1;
+    border: none;
+    border-radius: 7px;
+  }
+  &__personName{
+    margin: 0px;
+    font-size: 20px;
+  }
+  &__companyName{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  &__status{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    font-size: 10px;
+    color: $redColor2;
+    border: 2px solid $redColor2;
+    border-radius: 5px;
+  }
+  &__jobTitle2{
+    font-size: 12px;
+  }
+  &__workPeriod{
+    font-size: 12px;
+    color: gray;
+  }
+  &__description{
+    color: $redColor2;
+  }
+}
+.availabilitySection{
+  color: $redColor2;
+  font-weight: 100;
+  padding: 10px;
+  &__topic{
+    text-decoration: underline;
+    margin: 0;
+  }
+  p{
+    margin: 0;
+    margin-left: 20px;
+    font-size: 15px;
+  }
+}
+.buttonsManageProfile{
+  width: 100%;
+  &_button{
+    @include button;
+  }
+}

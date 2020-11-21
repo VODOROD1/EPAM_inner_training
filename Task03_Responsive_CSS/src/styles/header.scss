@@ -1,0 +1,199 @@
+.content {
+  width: 95%;
+  min-width: 320px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.header__projectList{
+  margin: 10px 0px;
+  font-size: 15px;
+  .projectList__lettering{
+    margin-left: 5px;
+  }
+}
+.header__testProjectLast{
+  margin: 10px 0px;
+  .testProjectLast__letteringNameOfProject{
+    font-size: 20px;
+  }
+}
+.testProjectLast__plusCheck{
+  display: none;
+}
+.testProjectLast__plusLabel{
+  border: none;
+  background: $grayColor1;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  padding: 0;
+  vertical-align: bottom;
+  .fa-plus-circle{
+    color: #747474;
+    vertical-align: top;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+  }
+  .fa-minus-circle{
+    color: #747474;
+    vertical-align: top;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    display: none;
+  }
+  :hover{
+    cursor: pointer;
+  }
+}
+.testProjectLast__plusCheck:checked~.testProjectLast__infoAboutProject{
+  display: block;
+}
+.testProjectLast__plusCheck:checked+label .fa-plus-circle{
+  display: none;
+}
+.testProjectLast__plusCheck:checked+label .fa-minus-circle{
+  display: inline;
+}
+.testProjectLast__infoAboutProject{
+  width: 100%;
+  height: auto;
+  display: none;
+  margin-top: 15px;
+  .infoAboutProject{
+    @include fontMenu;
+    &__wrapper{
+      width: 100%;
+    }
+    &__table{
+      width: 100%;
+      @include fontMenu;
+      border-collapse: collapse;
+      tr{
+        border-top: 1px solid black;
+        p{
+          @include fontMenu;
+          margin: 0;
+        }
+        td:first-child{
+          text-align: left;
+          border-top: 1px solid $grayColor2;
+          padding: 5px;
+          p{
+            color: black;
+            font-weight: bold;
+          }
+        }
+        td:last-child{
+          text-align: right;
+          border-top: 1px solid $grayColor2;
+          padding: 5px;
+          p{
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.tabs{
+  width: 100%;
+  height: 35px;
+  padding: 0;
+  &__tab{
+    height: 35px;
+    margin: 0;
+    margin-top: -1px;
+    padding: 0;
+    border: 1px solid $grayColor2;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    .fas{
+      color: $redColor1;
+    }
+  }
+  &__tab:first-child{
+    width: 45%;
+    background-color: $grayColor1;
+    float: left;
+  }
+  &__tab:last-child{
+    width: calc(55%);
+    margin-right: 0px;
+    float: right;
+    background-color: $grayColor2;
+  }
+}
+.recordManagementBlock{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 10px;
+  border: 1px solid $grayColor2;
+  border-top: none;
+  button{
+    @include buttonOfRecordManagementBlock;
+    margin: 5px;
+  }
+  &_expandAll{
+    flex: 1 1 1;
+    float: left;
+  }
+  &_export{
+    flex: 1 1 1;
+    .fas{
+      color: green;
+    }
+  }
+  &_filters{
+    flex: 1 1 1;
+    float: right;
+    text-align: left;
+    display: block;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 15px !important;
+    i{
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 15px;
+      
+    }
+    span{
+      display: inline-block;
+      vertical-align:middle;
+      margin-bottom: 15px;
+    }
+  }
+
+  &_filters::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    height: 24px;
+    width: 24px;
+    background: linear-gradient(to top left, lightgrey, $grayColor3);
+    right: 8%;
+    top: 4px;
+    transform: rotate(45deg);
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+   }
+
+  &_select{
+    flex: 3 1 0;
+    margin: 5px;
+    margin-bottom: 10px;
+    height: 35px;
+    // width: 98%;
+    padding-left: 10px;
+    font-size: 12px;
+    color: gray;
+  }
+}
