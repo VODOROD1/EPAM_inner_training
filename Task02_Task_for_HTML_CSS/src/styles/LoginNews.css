@@ -1,0 +1,137 @@
+.side{
+  box-sizing: border-box;
+  width: 250px;
+  height: 100%;
+}
+.side__login{
+  height:300px;
+  border-radius: 10px;
+}
+.side__login div{
+  margin: 0px;
+  background-color: #f6f6f6;
+}
+.orangeUL__LI{
+  list-style-image: url(../images/orange_dot.jpg);
+
+}
+.side__login_keyBackground{
+  box-sizing: border-box;
+  background: url(../images/login_top.jpg) no-repeat;
+  height: 90px;
+  padding-top: 30px;
+}
+.side__login_title{
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #96a735;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.side__login_nameField{
+  padding-left: 40px;
+  margin-bottom: 10px !important;
+  font-size: 14px;
+  color: #61616d;
+}
+.star{
+  display: inline-block;
+  color: red;
+}
+.form > p{
+  margin-bottom: 20px;
+}
+.form__field{
+  margin-left: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.form__submit{
+  margin-left: 30px;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+  background: linear-gradient(to top, #868686, #b1b1b1);
+  color: white;
+  font-weight: bold;
+  box-shadow: none;
+  border: none;
+}
+.form__submit:hover{
+  background: linear-gradient(to top, #c7761a, #f79321);
+}
+.side__login_grayBackground{
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+  height: 200px;
+}
+.side__login_grayBackground form{
+  margin: 0px;
+}
+.side__login_grayBackground form p{
+  margin: 0px;
+}
+.linkWithIcon div{
+  display: inline-block;
+}
+.linkWithIcon__icon{
+  height: 10px;
+  vertical-align: top;
+}
+.linkWithIcon__link{
+  vertical-align: middle;
+}
+.side__login .linkWithIcon{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+/****************************************************/
+.side__news {
+  margin-top: 5px;
+}
+.side__news_newspaper{
+  box-sizing: border-box;
+  background: url(../images/event_top.jpg) no-repeat;
+  height: 70px;
+  padding-top: 40px;
+}
+.side__news_latestNews{
+  font-size: 25px;
+  font-weight: bold;
+  color: #e49048;
+  margin-bottom: 0px;
+}
+.side__news > div{
+  margin: 0px;
+}
+.side__news_newspaper p{
+  text-align: center;
+  margin-top: 0px;
+}
+.side__news_grayBackground{
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+  margin-top: -15px !important;
+  padding: 10px;
+  padding-top: 0px;
+}
+.side__news_grayBackground ul{
+  list-style-image: url(../images/green_right.jpg);
+  margin: 0px;
+}
+.side__news_grayBackground ul li{
+  margin: 0px;
+}
+.newsLi__title{
+  color: #a2944b;
+  font-weight: bold;
+  font-size: 13px;
+}
+.newsLi__article{
+  color: #757581;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,106 @@
+.tagline_penBackground{
+    width: auto;
+    height: 100px;
+    background:  url(../images/growth_bg.jpg);
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+.tagline__title_penBackground{
+    color: #5a636a;
+    margin: 0px;
+}
+.tagline__article_penBackground{
+    margin: 0px;
+    color: gray;
+}
+.main{
+    box-sizing: border-box;
+    width: 1000px;
+    /* min-height: calc(100% - 500px); */
+    min-height: calc(100vh - 500px);
+    min-height:-webkit-calc(100vh - 500px);
+    margin-left: calc(50% - 500px);
+    background-repeat: no-repeat;
+    background-color: white;
+    /* padding-bottom: 120px; */
+}
+.main_content{
+    box-sizing: border-box;
+    width: 1000px;
+    height: 100%;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.main_content > div{
+    display: inline-block;
+    
+}
+.text{
+    font-size: 13px;
+    line-height: 20px;
+}
+.article{
+    width: 650px;
+    height: 100%;
+    vertical-align: top;
+    margin-right: 20px;
+}
+.article p{
+    color: #8d8b96;
+}
+.tagline__article_welcome_first{
+    color: #a7a74f !important;
+    font-weight: bold;
+    font-size: 14px;
+}
+.linkWithIcon__link{
+    border: none;
+    color: #5f6774;
+    font-weight: bold;
+    font-size: 12px;
+}
+.linkWithIcon__link:hover{
+    color: #dda25e;
+    cursor: pointer;
+}
+.tagline__title_welcome{
+    color: #858a90;
+    font-weight: bold;
+    font-size: 22px;
+}
+.tagline__title_welcome span{
+    color: black;
+    font-size: 30px;
+}
+.article__textImage{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.article__textImage > div{
+    display: inline-block;
+}
+.article__textImage__imageWrapper{
+    width: 100px;
+    vertical-align: top;
+    margin-right: 20px;
+}
+.article__textImage__textWrapper{
+    width: 520px;
+}
+.article__textImage__textWrapper > p{
+    margin-top: 0px;
+}
+.article__textImage__headline__link{
+    color: #ce9043;
+    font-weight: bold;
+    font-size: 13px;
+}
+.article__textImage__headline__link:hover{
+    color: #a9ad35;
+    cursor: pointer;
+}
