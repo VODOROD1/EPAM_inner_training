@@ -1,0 +1,55 @@
+{
+  "name": "jquery",
+  "version": "1.0.0",
+  "description": "jquery",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
+    "devserver": "live-server --browser=Chrome",
+    "scss": "sass --watch src/styles/scss:src/styles/css/."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.epam.com/mikhail_beliakov/web2020_1_mikhail_beliakov.git"
+  },
+  "keywords": [
+    "js",
+    "jquery",
+    "table of products",
+    "filering",
+    "sorting",
+    "modal view",
+    "Add/Update"
+  ],
+  "author": "Beliakov Mikhail",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.5.2",
+    "csv-loader": "^3.0.3",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.2.0",
+    "papaparse": "^5.2.0",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "set-default-browser": "^1.1.1",
+    "webpack-browser-plugin": "^1.0.20",
+    "express": "3.1.x"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  }
+}
